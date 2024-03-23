@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Chile 2.0</title>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img width="30px" src="./assets/img/viajes.svg" alt="logo"> Viajes
+                Chile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destacados">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="volcan parinacota">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="moais">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="pinguinos">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <main class="container overflow-hidden">
+        <section id="quienes-somos" class="d-none d-lg-block container-fluid">
+            <h3 class="text-center my-4">¿Quiénes somos?</h3>
+            <hr>
+            <div class="somos row">
+                <div class="col-6">
+
+                    <img class="somos__image " src="./assets/img/quienes-somos.jpg" alt="quienes somos">
+                </div>
+                <div class="somos__text col-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ab fugit voluptatum! Totam iusto
+                        repellendus tempora voluptate ipsa cupiditate nam quam ex! Amet, tempore dolor? Quam sequi
+                        delectus rem repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolorum unde!
+                        Earum minima quisquam voluptates illo nostrum, iure culpa quasi nemo placeat rem non at, magnam
+                        tempore autem assumenda odit?
+                        <br>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ab fugit voluptatum! Totam
+                        iusto
+                        repellendus tempora voluptate ipsa cupiditate nam quam ex! Amet, tempore dolor? Quam sequi
+                        delectus rem repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolorum unde!
+                        Earum minima quisquam voluptates illo nostrum, iure culpa quasi nemo placeat rem non at, magnam
+                        tempore autem assumenda odit?
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- aqui va destacados -->
+        <section id="destacados" class="my-4">
+            <h3 class="mb-4 text-center">Destacados</h3>
+            <hr>
+
+            <div class="row row-cols-1 row-cols-md-2">
+
+
+                <div class="col">
+                    <div class="card mb-3 border-dark">
+                        <div class="row h-100">
+                            <div class="col-md-5 g-0">
+                                <img src="./assets/img/card1.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
+                                    alt="Parque Torre del Paine">
+                            </div>
+                            <div class="col-md-7 g-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Torres del Paine</h5>
+                                    <p class="card-text">El Parque Nacional Torres del Paine está ubicado en la comuna
+                                        de Torres del Paine, Provincia de Última Esperanza, Región de Magallanes y de la
+                                        Antártica
+                                        Chilena, a 400 km al noroeste de Punta Arenas y a 112 km al noroeste de Puerto
+                                        Natales.</p>
+                                </div>
+                                <div class="card-footer py-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-plane-up px-2"></i>
+                                    <span class="card-text__p"><small class="text-body-secondary">
+                                            Vuelos desde
+                                        </small></span> <span
+                                        class="card-text__span ms-auto fw-semibold">$159.990</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border-dark ">
+                        <div class="row h-100">
+                            <div class="col-md-5 g-0">
+                                <img src="./assets/img/card2.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
+                                    alt="Parque Torre del Paine">
+                            </div>
+                            <div class="col-md-7 g-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Desierto de Atacama</h5>
+                                    <br>
+                                    <p class="card-text"> Se extiende por las regiones naturales del Norte Grande y el
+                                        Norte Chico de Chile, abarcando las regiones de Arica y Parinacota, Tarapacá,
+                                        Antofagasta, Atacama y el norte de la región de Coquimbo.
+
+                                    </p>
+                                </div>
+                                <div class="card-footer py-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-plane-up px-2"></i>
+                                    <span class="card-text__p"><small class="text-body-secondary">
+                                            Vuelos desde
+                                        </small></span> <span
+                                        class="card-text__span ms-auto fw-semibold">$189.990</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border-dark ">
+                        <div class="row h-100">
+                            <div class="col-md-5 g-0">
+                                <img src="./assets/img/card3.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
+                                    alt="Parque Torre del Paine">
+                            </div>
+                            <div class="col-md-7 g-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Norte grande de Chile</h5>
+                                    <p class="card-text">El Norte grande es una de las cinco regiones naturales en que
+                                        tradicionalmente se divide Chile. Se inicia a partir la regiones de Arica y
+                                        Parinacota, Tarapacá, Antofagasta y la mitad norte de Atacama.</p>
+                                </div>
+                                <div class="card-footer py-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-plane-up px-2"></i>
+                                    <span class="card-text__p"><small class="text-body-secondary">
+                                            Vuelos desde
+                                        </small></span> <span
+                                        class="card-text__span ms-auto fw-semibold">$289.990</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 border-dark">
+                        <div class="row h-100">
+                            <div class="col-md-5 g-0">
+                                <img src="./assets/img/card4.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
+                                    alt="Parque Torre del Paine">
+                            </div>
+                            <div class="col-md-7 g-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bosque Magico</h5>
+                                    <p class="card-text">
+                                        Esta eco-región está en el suroeste de Chile y se caracteriza por un
+                                        clima fuertemente lluvioso y bosques siempre verdes hogar de una fauna y flora
+                                        única,como las milenarias araucarias y alerces.
+                                    </p>
+                                </div>
+                                <div class="card-footer py-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-plane-up px-2"></i>
+                                    <span class="card-text__p"><small class="text-body-secondary">
+                                            Vuelos desde
+                                        </small></span> <span
+                                        class="card-text__span ms-auto fw-semibold">$259.990</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Testimonios-- -->
+        <section class="testimonios">
+            <h3 class="mb-4 text-center">Testimonios</h3>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="testimonios-body col-md-4">
+                        <p class="testimonios-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                            quidem cumque magnam
+                            laboriosam
+                            vero architecto officiis quod autem error exercitationem, sint, molestias modi atque
+                            temporibus
+                            maxime ea id voluptatem illum.</p>
+                        <img src="./assets/img/testimonio1.jpg" class="testimonios-body__image rounded-circle "
+                            alt="Imagen 1">
+                        <p class="testimonios-body__name">Mariela</p>
+                    </div>
+                    <div class="testimonios-body col-md-4">
+                        <p class="testimonios-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                            impedit earum, deleniti quidem
+                            tenetur tempore eveniet asperiores ut optio tempora delectus molestias at facere,
+                            exercitationem
+                            voluptatum quis voluptates nulla.</p>
+                        <img src="./assets/img/testimonio2.jpg" class="testimonios-body__image rounded-circle "
+                            alt="Imagen 2">
+                        <p class="testimonios-body__name">Christian</p>
+                    </div>
+                    <div class="testimonios-body col-md-4">
+                        <p class="testimonios-body__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                            illo nesciunt similique
+                            consectetur,
+                            vero ut incidunt! Sint dolorem unde, quaerat assumenda, repellendus, voluptates harum
+                            suscipit
+                            perferendis quod nisi impedit odit!</p>
+                        <img src="./assets/img/testimonio3.jpg" class="testimonios-body__image rounded-circle"
+                            alt="Imagen 3">
+                        <p class="testimonios-body__name">Fernanda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="container-fluid">
+            <h3 class="text-center my-4">Contacto</h3>
+            <hr>
+
+            <div class="row">
+                <div class="datos col-md-6">
+                    <form>
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <label for="nombre">Nombre:</label>
+                                
+                                <input type="text" class="form-control" id="nombre" name="nombre">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="apellido">Email:</label>
+                                <input type="text" class="form-control" id="apellido" name="Email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="checkbox" id="suscripcion" name="suscripcion">
+                                <label for="suscripcion">Acepto los terminos y condiciones</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Enviar
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contacto col-md-6 ">
+
+                    <p><a class="text-white text-decoration-none" href="https://web.whatsapp.com/">
+                            <i class="contacto__icon  fa-solid fa-phone"></i></a>
+                        +569/98744532
+                    </p>
+                    <p class=>
+                        <a class="text-white text-decoration-none" href="https://www.linkedin.com/">
+                            <i class="contacto__icon  fa-brands fa-linkedin"></i></a>
+                        ViajesChile
+                    </p>
+                    <p><a class="text-white text-decoration-none"
+                            href=" https://www.google.com/intl/es-419/gmail/about/">
+                            <i class="contacto__icon fa-solid fa-envelope"></i></a>
+                        contacto@viajeschile.com
+                    </p>
+
+                    <p><a class="text-white text-decoration-none" href=" https://www.instagram.com">
+                            <i class="contacto__icon  fa-brands fa-instagram"></i></a>
+                        viajes_chile
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Terminos y condiciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Al realizar la reserva con Viajes Chile SPA (en adelante, “Viajes Chile”) y emitir la confirmación
+                    de viaje,
+                    su acceso al uso del servicio está condicionado a la aceptación y cumplimiento de los siguientes
+                    términos y condiciones. Cuando realiza una reserva con nosotros, garantiza que tiene la autoridad
+                    para aceptar y acepta en nombre de su parte los términos de estas Condiciones de reserva.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Rechazo los
+                        terminos</button>
+                        <div id="liveAlertPlaceholder"></div>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Acepto los terminos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

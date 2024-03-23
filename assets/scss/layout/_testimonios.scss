@@ -1,0 +1,24 @@
+.testimonios-body{
+    color: $testi;
+    padding-top: 30px;
+    justify-content:center;
+    align-items: center;
+  
+
+    &__text{
+        text-align: center;
+    }
+
+    &__image{
+        width:80px;
+        height: 80px;
+       
+        
+    }
+
+    &__name{
+        padding-top: 20px;
+        padding-bottom:20px ;
+        text-align: center;
+    }
+}

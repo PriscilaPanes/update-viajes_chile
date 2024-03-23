@@ -1,0 +1,7 @@
+$custom-colors: (
+  "custom-primary": $color1,
+  "custom-adl": $adl,
+  "custom-testi":$testi
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
