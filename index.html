@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile 2.0</title>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/script.js"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
+<body class="container">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#"><img width="30px" src="./assets/img/viajes.svg" alt="logo"> Viajes
@@ -62,22 +62,22 @@
         </div>
     </header>
     <main class="container overflow-hidden">
-        <section id="quienes-somos" class="d-none d-lg-block container-fluid">
+        <section id="quienes-somos " class=" container-fluid">
             <h3 class="text-center my-4">¿Quiénes somos?</h3>
             <hr>
             <div class="somos row">
                 <div class="col-6">
 
-                    <img class="somos__image " src="./assets/img/quienes-somos.jpg" alt="quienes somos">
+                    <img class="somos__image d-none d-lg-block" src="./assets/img/quienes-somos.jpg"
+                        alt="quienes somos">
                 </div>
-                <div class="somos__text col-6">
+                <div class="somos__text col-12 col-lg-6">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ab fugit voluptatum! Totam iusto
                         repellendus tempora voluptate ipsa cupiditate nam quam ex! Amet, tempore dolor? Quam sequi
                         delectus rem repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolorum unde!
                         Earum minima quisquam voluptates illo nostrum, iure culpa quasi nemo placeat rem non at, magnam
                         tempore autem assumenda odit?
-                        <br>
-                        <br>
+
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ab fugit voluptatum! Totam
                         iusto
                         repellendus tempora voluptate ipsa cupiditate nam quam ex! Amet, tempore dolor? Quam sequi
@@ -99,14 +99,14 @@
             <div class="row row-cols-1 row-cols-md-2">
 
 
-                <div class="col">
-                    <div class="card mb-3 border-dark">
+                <div class="col ">
+                    <div class="card mb-3 border-dark ">
                         <div class="row h-100">
-                            <div class="col-md-5 g-0">
+                            <div class="col-12 col-md-5 ">
                                 <img src="./assets/img/card1.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
                                     alt="Parque Torre del Paine">
                             </div>
-                            <div class="col-md-7 g-0">
+                            <div class="col-12 col-md-7 g-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Torres del Paine</h5>
                                     <p class="card-text">El Parque Nacional Torres del Paine está ubicado en la comuna
@@ -129,14 +129,13 @@
                 <div class="col">
                     <div class="card mb-3 border-dark ">
                         <div class="row h-100">
-                            <div class="col-md-5 g-0">
+                            <div class="col-md-5 ">
                                 <img src="./assets/img/card2.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
                                     alt="Parque Torre del Paine">
                             </div>
                             <div class="col-md-7 g-0">
                                 <div class="card-body">
                                     <h5 class="card-title">Desierto de Atacama</h5>
-                                    <br>
                                     <p class="card-text"> Se extiende por las regiones naturales del Norte Grande y el
                                         Norte Chico de Chile, abarcando las regiones de Arica y Parinacota, Tarapacá,
                                         Antofagasta, Atacama y el norte de la región de Coquimbo.
@@ -157,7 +156,7 @@
                 <div class="col">
                     <div class="card mb-3 border-dark ">
                         <div class="row h-100">
-                            <div class="col-md-5 g-0">
+                            <div class="col-md-5 ">
                                 <img src="./assets/img/card3.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
                                     alt="Parque Torre del Paine">
                             </div>
@@ -182,7 +181,7 @@
                 <div class="col">
                     <div class="card mb-3 border-dark">
                         <div class="row h-100">
-                            <div class="col-md-5 g-0">
+                            <div class="col-md-5 ">
                                 <img src="./assets/img/card4.jpg" class="img-fluid h-100 object-fit-cover rounded-start"
                                     alt="Parque Torre del Paine">
                             </div>
@@ -261,11 +260,14 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <label for="nombre">Nombre:</label>
-                                
+                                <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    data-bs-custom-class="custom-tooltip" data-bs-title="Escribe tu nombre."> </i>
                                 <input type="text" class="form-control" id="nombre" name="nombre">
                             </div>
                             <div class="col-md-6">
                                 <label for="apellido">Email:</label>
+                                <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-custom-class="custom-tooltip" data-bs-title="Escribe tu Email."> </i>
                                 <input type="text" class="form-control" id="apellido" name="Email">
                             </div>
                         </div>
@@ -273,24 +275,28 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <label for="mensaje">Mensaje:</label>
+                                <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-custom-class="custom-tooltip" data-bs-title="Deja tu mensaje."> </i>
                                 <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 ">
                                 <input type="checkbox" id="suscripcion" name="suscripcion">
-                                <label for="suscripcion">Acepto los terminos y condiciones</label>
+                                <label class="text-decoration-underline" for="suscripcion " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Acepto los terminos y condiciones</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-12">
-                                <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    Enviar
-                                </button>
-
+                                <div id="liveAlertPlaceholder">
+                                    <button type="button" class="btn btn-light" id="liveAlertBtn">
+                                        Enviar
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -337,10 +343,9 @@
                     para aceptar y acepta en nombre de su parte los términos de estas Condiciones de reserva.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Rechazo los
-                        terminos</button>
-                        <div id="liveAlertPlaceholder"></div>
-                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Acepto los terminos</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    
                 </div>
             </div>
         </div>

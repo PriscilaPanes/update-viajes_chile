@@ -12262,6 +12262,15 @@ body {
   color: white;
 }
 
+#carouselExample .carousel-item img {
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  #carouselExample .carousel-item img {
+    height: 500px;
+  }
+}
 .somos {
   width: 100%;
   padding-top: 30px;
@@ -12273,6 +12282,7 @@ body {
   padding-top: 30px;
   text-align: justify;
   align-content: center;
+  justify-content: center;
 }
 
 #destacados {
@@ -12291,6 +12301,9 @@ body {
 .testimonios-body__image {
   width: 80px;
   height: 80px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .testimonios-body__name {
   padding-top: 20px;
